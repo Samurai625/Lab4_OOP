@@ -1,0 +1,14 @@
+# Build artifacts
+bin/
+obj/
+
+# VSCode
+.vscode/
+
+# User files
+*.user
+*.suo
+*.temp
+
+# Logs
+*.log
