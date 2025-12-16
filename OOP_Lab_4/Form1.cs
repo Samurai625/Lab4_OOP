@@ -1,9 +1,10 @@
-namespace OOP_Lab_4;
-
-public partial class Form1 : Form
+namespace OOP_Lab_4
 {
-    public Form1()
+    public partial class Form1 : Form
     {
-        InitializeComponent();
+        public Form1()
+        {
+            InitializeComponent();
+        }
     }
 }

@@ -1,4 +1,3 @@
-using System.Drawing;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -17,19 +16,21 @@ namespace OOP_Lab_4
             this.form = form;
         }
 
-        public abstract void Draw();
-
+        public abstract void DrawBlack();
         public abstract void HideDrawingBackGround();
 
-        public void MoveRight(int step)
+        public void MoveRight(int steps)
         {
-            for(int i = 0; i < step; i++)
+            for (int i = 0; i < steps; i++)
             {
                 DrawBlack();
                 Thread.Sleep(100);
                 HideDrawingBackGround();
                 x += 5;
             }
+
+            // залишаємо фігуру на кінцевій позиції
+            DrawBlack();
         }
     }
 }
